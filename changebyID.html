@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anotherTimeWE can Change </title>
+    <style>
+        .one{
+            background-color: blue;
+        }
+        .two{
+            background-color:aqua;
+        }
+        .three{
+            background-color:blueviolet;
+        }
+        .four{
+            background-color:red;
+        }
+        .button{
+            cursor: pointer;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="one" id="one">
+        i am child one 
+    </div>
+    <div class="two" id ="two">
+        i am child two
+    </div> 
+    <div class="three" id="three">
+        i am thrid child
+    </div>
+    <div class="four" id ="four">
+        i am four child
+    </div>
+    <p class="para"></p>
+    <p id="key"></p>
+
+    <script>
+        //using function 
+        function changeColorfour()
+        {
+            //by getElement
+
+            document.getElementById("four").innerHTML="welcome to child four"
+            document.getElementById("three").innerHTML=" welcome to child three"
+         
+            //by ref
+           
+        }
+      //using ref 
+        const changeConttent =() =>{
+            const headc = document.getElementById("two");
+            headc.innerHTML = "welcome to child two "
+
+
+
+
+            //using query Selector 
+            //its find only 1st element and change the data
+            //use for how much is there eelement  
+            document.querySelector('#key').innerHTML = "I am Query tag part "
+
+        }
+        //using ref         
+        const oneChild =() =>{
+            const childOneis = document.getElementById("one");
+            childOneis.innerHTML ="Welcome to child one";
+            
+            //using class name 
+            //he console mdhe yeil  
+            console.log(document.getElementsByClassName('para'));
+            
+        
+        }
+
+        
+           
+        
+    </script>
+
+    <button class ="button" type="submit" onclick="changeColorfour()">I am Rest</button>
+    <button type="submit" onclick="changeConttent()">Change child two </button>
+    <button type="submit" onclick="oneChild()">oneisKey</button>
+</body>
+</html>

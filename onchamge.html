@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchangeevent</title>
+    <style>
+        .allis{
+           width: 500px;
+           height: 500px;
+           background-color: red;
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           margin: auto;
+           justify-content: center;
+            align-items: center;   
+            text-align: center;   
+                
+        }
+
+        .Genderselect{
+           width: 400px;
+           height: 300px;
+           background-color: yellow;
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           margin: auto;
+           justify-content: center;
+            align-items: center;   
+            text-align: center;   
+                
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="allis">
+            <label for="">Your Name : </label>
+            <input type="text" name="" id="ice"><br>
+          
+                <label for=""> chose a ice cream flavor</label><br>
+                <select name="iceCream" id="iceCream" onchange="selectevent()" >
+                <option value="">Select one...</option>
+                <option value="chocolate">chocolate</option>
+                <option value="sardine">sardine</option>
+                <option value="vanila">vanila</option>           
+                </select>         
+                <br>
+                <label for=""> Summary : <br>
+                    <label id="result"></label>
+                </label>
+               
+            
+        </div>
+        
+      
+    
+
+    <!-- <script>
+        const selectevent = () =>{
+            const inputchange = document.getElementById('ice').value;
+            const iceCream = document.getElementById('iceCream').value;
+            const result =document.getElementById('result');
+            result.innerHTML = `Mr.${inputchange} your order is ${iceCream}  `;
+            console.log(`${inputchange} your chose : ${iceCream}` ) ;
+        }
+        
+
+    </script> -->
+
+
+
+    <script>
+            const iceCream = document.getElementById('iceCream')
+            iceCream.addEventListener('change',()=>{
+            const inputchange = document.getElementById('ice').value;
+            const iceCream = document.getElementById('iceCream').value;
+            const result =document.getElementById('result');
+            result.innerHTML = `Mr.${inputchange} your order is ${iceCream}  `;
+ });
+
+
+    </script>
+<div class="Genderselect">
+   
+
+      
+      
+            <label for=""> chodse Gender</label><br>
+            <select name="Gender" id="Genderis" onchange="selecteventge()" >
+            <option value="">Select one...</option>
+            <option value="chocolate">Male</option>
+            <option value="sardine">Female</option>
+                       
+            </select>         
+            <br>
+            <label for=""> Summary : <br>
+                <label id="ans"></label>
+            </label>
+           
+        <script>
+            const Gender =document.getElementById('Genderis')
+            Gender.addEventListener('change',()=>{
+             //   const genderis = document.getElementById('Genderis').value;
+                const ans = document.getElementById('ans');
+                ans.innerHTML= `you are ${genderis}`;
+            });
+        </script>
+    
+    
+</div>
+
+
+
+</body>
+</html>

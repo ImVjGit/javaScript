@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTime</title>
+</head>
+<body>
+    <!-- 1044 -->
+<p>time : </p>
+<button id ="btn">click</button>
+<script>
+// const a  =setTimeout(fun,2000);
+// function fun(){
+//     alert("i am timeOut Function ");
+// }1042
+const stopnum =document.querySelector('p')
+const btn = document.querySelector('#btn');
+const num = 0 ;
+let timeref;
+const stopnumTopNum = ()=>{ 
+    stopnum.innerHTML()='loading ';
+    setInterval(()=> {
+        stopnum.innerHTML='${num}';
+        num++;
+    }, 1000)
+}
+btn.addEventListener('click',stopnumTopNum);
+</script>
+</body>
+</html>

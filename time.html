@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+</head>
+
+<body>
+    <p>
+        show time
+    </p>
+    <button onclick="myfuction()">Hours !!!</button>
+    <p id="hours"></p>
+    
+    <p>
+        show Day
+    </p>
+    <button onclick="showDay()">Year !!!</button>
+    <p id="Year"></p>
+    
+    
+    <p>Time
+    </p>
+    <button onclick="setInterval()"></button>
+    <p id ="currentTime "></p>
+    
+    
+    
+    
+    
+    <script>
+
+        function myfuction() {
+
+            var d = new Date();
+            d.setHours(5);
+            document.getElementById("hours").innerHTML = d;
+
+        }
+        function showDay() {
+            var d1 = new Date();
+            d1. setFullYear(2022);
+            document.getElementById("Year").innerHTML = d1;
+        }
+
+       
+
+
+    </script>
+</body>
+
+</html>

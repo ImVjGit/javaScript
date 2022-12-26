@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- it show time  -->
+    <p>
+        Time
+    </p>
+    <button onclick="setInterval()">Show</button>
+    <p id="int"></p>
+    <!-- end -->
+    <!-- Day -->
+    <p>Day</p>
+    <button onclick="Dayshow()">Day</button>
+    <p id="Dayshowhere"></p>
+ <script>
+         (function(){
+            setInterval(()=>{
+                var dska = new Date().toLocaleTimeString();
+                document.getElementById("int").innerHTML = dska;
+
+
+            },1000)
+        })();
+
+   function Dayshow(){
+        var dayshow = new Date().toLocaleDateString();
+                        document.getElementById("Dayshowhere").innerHTML = dayshow;
+    }
+
+
+
+    </script>
+</body>
+</html>

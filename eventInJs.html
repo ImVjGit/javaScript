@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event In JavaScript </title>
+<style>
+    maindiv{
+
+  }
+</style>
+</head>
+<body>
+    <div class="div">
+        <h1>Welcome</h1>
+         "Differnet event in JavaScript"
+    </div>
+    <div>
+
+        // type 1 
+        <button type="submit" onclick="alert('I am InLine')">Simple inline alert</button><br><br>
+        
+        // type 2 
+        <button type="submit" onclick="callingfunction()">By calling function </button><br><br>
+        <script>
+            // function callingfunction(){
+            //     alert('i am type two ')
+            // } or 
+            const callingfunction = () => {
+                alert('another way to call me ');
+            }
+        </script>
+
+        //type 3  
+        <button type="submit" id="thirdway">inline event </button><br><br>
+        <script>
+            const thirdway = document.getElementById('thirdway');
+            thirdway.onclick = function() {
+                alert("mostly use ...")         
+            }            
+            </script>
+
+        //type 4     
+        <button type="submit" id="fourthway">Event-Listenrs</button><br><br>
+            <script>
+                
+               const fourthway = document.querySelector('#fourthway');
+               fourthway.addEventListener('click',()=>{
+                alert('i love this way of writing ')
+               })
+            
+              
+
+                </script>
+
+            
+                
+                
+
+    </div>
+    <div class="anohter">
+        <p id="myp" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            
+            life is wonderfull if you enjoy the most
+            life is wonderfull if you enjoy the mostlife is wonderfull if you enjoy the mostlife is wonderfull if you enjoy the mostlife is wonderfull if you enjoy the mostlife is wonderfull if you enjoy the mostlife is wonderfull if you enjoy the mostlife is wonderfull if you enjoy the mostlife is wonderfull if you enjoy the most
+            </p>
+            <script>
+                function mouseDown(){
+                    document.getElementById("myp").style.color="red";
+                }
+                
+                function mouseUp(){
+                    document.getElementById("myp").style.color="green";
+                }
+                </script>
+        
+        </div>
+   
+        <div class="AnotherDown">
+            <p id="box">
+                you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev  you are my fev
+
+                </p>
+             <script>
+                
+              const menter = document.getElementById('box');
+              menter.addEventListener('mouseenter',()=>
+              {
+                menter.style.backgroundColor ='red';
+                console.log('mouse entr bro');
+              });
+                
+
+
+              menter.addEventListener('mouseleave',()=>{
+                menter.style.backgroundColor='white';
+                console.log("mouse leave bro");
+
+              });
+
+
+                </script>
+            
+            
+            </div>
+
+
+            <div class="keyboradevent">
+                
+                <label for="name"> name : </label>
+                <input type="text" onkeypress="keypress()" onkeydown="keydown()" onkeyup="keyup"/>
+                <br>
+                <p id="keys"></p>
+                <script>
+                        const keypress = () =>{
+                        document.getElementById('keys').innerHTML = `you press ${event.key} and its code is ${event.code}`;
+                       
+                    } 
+
+                    
+                 </script>
+                </div>
+
+
+
+                <div class="keyboradeventtwo">
+                
+                <label for="name"> name : </label>
+                <input type="text" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyup"/>
+                <br>
+                <p id="keysss"></p>
+                <script>
+                      
+
+                       const keyDown= () => {
+                        document.getElementById('keysss').innerHTML='key down ';
+                       }
+
+                       const keyUp = () => {
+                        document.getElementById('keysss').innerHTML ='key is up ';
+                         
+                       }
+                 </script>
+                </div>
+//10
+
+    
+
+</body>
+</html>
