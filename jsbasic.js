@@ -606,13 +606,13 @@ console.log(fullsents);
 
 //findig string in string
 //6:51:00
-    //method use index of  
-    //last index of mehtod 
+//method use index of  
+//last index of mehtod 
 const StringInSideStringDemo = 'hello i am Java Script ';
 console.log(StringInSideStringDemo.indexOf("Java"));//output 11 : its 
-console.log(StringInSideStringDemo.indexOf("e",1));
+console.log(StringInSideStringDemo.indexOf("e", 1));
 //using lastindex of 
-console.log(StringInSideStringDemo.lastIndexOf("J",11));
+console.log(StringInSideStringDemo.lastIndexOf("J", 11));
 
 
 //Search method in string(we only give data not index number ) its return position 
@@ -620,44 +620,44 @@ let Sdata = StringInSideStringDemo.search("va");
 console.log(Sdata);
 
 //Extracting String part
-    // we have 3 method 
-        //1 slice(strat, end)
-        //2 substr(start,length)
-        //3 substring(start,end)
-    //its return extracted part in new string 
-    //its take two parameters : 1 start postion 2 end position(end not include)
+// we have 3 method 
+//1 slice(strat, end)
+//2 substr(start,length)
+//3 substring(start,end)
+//its return extracted part in new string 
+//its take two parameters : 1 start postion 2 end position(end not include)
 //1 slice(start)
-    var str = "apple,bananaa,kiwi";
-    let Sstr = str.slice(0,4); //its give 0 to 3 index data only 
-    console.log(Sstr);
-    let ress =  str.slice(7,-2); //its go 7 to last number of - 2 
-    console.log(ress);
+var str = "apple,bananaa,kiwi";
+let Sstr = str.slice(0, 4); //its give 0 to 3 index data only 
+console.log(Sstr);
+let ress = str.slice(7, -2); //its go 7 to last number of - 2 
+console.log(ress);
 
 //try 
 //display only 280 char of string like the one used in twitter? 
 
-let twitter = "i am twitter i am twitter i am twitter  i am twitter"; 
-let countstr= twitter.slice(0,24); // its show or display  only 0 to 24 char 
+let twitter = "i am twitter i am twitter i am twitter  i am twitter";
+let countstr = twitter.slice(0, 24); // its show or display  only 0 to 24 char 
 console.log(countstr);
 console.log(countstr.length);
 
 // 2 using substring 
 //subString can't accept negative index 
-    var strSubString  = "apple,bananaa,kiwi";
-    let ressub = strSubString.substring(0,4); 
-    console.log(ressub);
-    let Onlyindex = strSubString.substring(5);
- console.log(Onlyindex);
+var strSubString = "apple,bananaa,kiwi";
+let ressub = strSubString.substring(0, 4);
+console.log(ressub);
+let Onlyindex = strSubString.substring(5);
+console.log(Onlyindex);
 
- //3 substr method (molsty use for traveling backword direction )
- //diff is that the second parameter specifies the length of the extraced part.
-  var strOnlysubStr  = "apple,bananaa,kiwi";
-    let resSubstr = strOnlysubStr.substr(-4);
-    console.log(resSubstr);
+//3 substr method (molsty use for traveling backword direction )
+//diff is that the second parameter specifies the length of the extraced part.
+var strOnlysubStr = "apple,bananaa,kiwi";
+let resSubstr = strOnlysubStr.substr(-4);
+console.log(resSubstr);
 //replacing  String content 
 //method have replace(searchFor,replaceWith);
-let bioDate ='i am example of replacing string ';
-let dataRe = bioDate.replace('of','DATACHANGE');
+let bioDate = 'i am example of replacing string ';
+let dataRe = bioDate.replace('of', 'DATACHANGE');
 console.log(dataRe);
 //point to remember 
 //1 its does not change the string 
@@ -667,24 +667,24 @@ console.log(dataRe);
 
 //Extracting String Character
 // 3 method use 
-        //1charAt(position)-(use return the char)
-        //2 charCodeAt(position)
-        //3property access[]
+//1charAt(position)-(use return the char)
+//2 charCodeAt(position)
+//3property access[]
 
 
-    //1 charAt
-    let strEx = "Hello World";
-    console.log(strEx.charAt(3));   
-    
-    //2charCode
-    //charCode return the UTF-16 code 
-   //charCodeAt() Method return the unicode of the character at a specified  index in a string 
-    let strExCode = "Hello World";
-    console.log(strExCode.charCodeAt(2));
-    
-    
-    ///3 property access 
-    //its allow the property access [] on string 
+//1 charAt
+let strEx = "Hello World";
+console.log(strEx.charAt(3));
+
+//2charCode
+//charCode return the UTF-16 code 
+//charCodeAt() Method return the unicode of the character at a specified  index in a string 
+let strExCode = "Hello World";
+console.log(strExCode.charCodeAt(2));
+
+
+///3 property access 
+//its allow the property access [] on string 
 let strpro = "Hello World";
 console.log(strpro[0]);
 console.log(strpro.toLowerCase());
@@ -702,13 +702,13 @@ console.log(txt.split(" "));
 console.log(txt.split("|"));
 
 //************************************************************************************************************* */
-                    //Date and Time 
-                    //its platform independent format
-                        //we can create date using 4 type 
-                            //1  new Date();
-                            //2  new Date(year,month,day,hours,minutes,second,milliseconds)//its take 7 argu
-                            //3  new Date(milliseconds);
-                            //4  new Date(date string);
+//Date and Time 
+//its platform independent format
+//we can create date using 4 type 
+//1  new Date();
+//2  new Date(year,month,day,hours,minutes,second,milliseconds)//its take 7 argu
+//3  new Date(milliseconds);
+//4  new Date(date string);
 //************************************************************************************************************* */
 
 //date method (get and set )
@@ -716,7 +716,7 @@ console.log(txt.split("|"));
 
 // using normal
 let curDate = new Date();
-console.log('date is '+curDate);
+console.log('date is ' + curDate);
 
 //2 
 console.log(new Date().toLocaleString()); //its give date and time 
@@ -728,10 +728,10 @@ console.log(Date.now()); //its give milli sec
 
 // show month 
 //note Javascript count month 0 to 11 
-var d = new Date(2022,11,24,10,33,30,0);
+var d = new Date(2022, 11, 24, 10, 33, 30, 0);
 console.log(d.toLocaleDateString());
 
-var monthShow = new Date(2022,4,3);
+var monthShow = new Date(2022, 4, 3);
 console.log(monthShow.toString());
 
 // Date Method 
@@ -757,23 +757,23 @@ console.log(AllDateMethod.setHours(5));
 //Math object in Javascript 
 //******************************************************************************** */
 console.log(Math.PI);
-let numMath  = 10.655;
+let numMath = 10.655;
 console.log(Math.round(numMath));//it Convert the number if is more than 0.5
-console.log(Math.pow(3,3));//its multiply both number 
+console.log(Math.pow(3, 3));//its multiply both number 
 console.log(Math.sqrt(25));
 console.log(Math.abs(-52));//its convert the negative value into positive
-console.log(Math.abs(4-6)); 
+console.log(Math.abs(4 - 6));
 console.log(Math.ceil(4.4));//if after . is any value is more than 1 or 1 then is incremnet by 1.00
 console.log(Math.floor(4.7));//its give as its value 
-console.log(Math.min(15,46,2,3,87,44,11));
-console.log(Math.max(15,46,2,3,87,44,11));
+console.log(Math.min(15, 46, 2, 3, 87, 44, 11));
+console.log(Math.max(15, 46, 2, 3, 87, 44, 11));
 
 //moslty use 
 console.log(Math.random());//its give always 0.0+ value random number  
-console.log(Math.random()*10);
-console.log(Math.floor(Math.random()*10));//it give number between 0 to 9
+console.log(Math.random() * 10);
+console.log(Math.floor(Math.random() * 10));//it give number between 0 to 9
 //trunc method return the integer part of a number 
-console.log(Math.trunc(4,6));//its never return value in decimal d
+console.log(Math.trunc(4, 6));//its never return value in decimal d
 console.log(Math.trunc(-99.02));
 
 //************************************************************************************************************* */
@@ -809,19 +809,18 @@ console.log(Math.trunc(-99.02));
 // BOM: is browser object Model 
 //  use : which deal with browser components and  all window related operation
 //ex: 
-function backTask()
-{
+function backTask() {
     window.history.back();
 }
 //alert(location.href);//show current url 
 //if(confirm('want to visit  again ?'))/
 //{
-   // location.href="http://www.google.com";
+// location.href="http://www.google.com";
 //}    
 
 //********************************************************************************************************** */
 
- //DOM Nevigation 
+//DOM Nevigation 
 //root element of document : is html
 //to check using :documnet.documnetElement
 //1 documnet.documnetElement
@@ -856,7 +855,7 @@ function backTask()
 
 
 
-       //         Dom Completed
+//         Dom Completed
 
 //9 43 
 //******************************************************************* */
@@ -876,16 +875,16 @@ function backTask()
 //when js is used in html pages,javascript can "react on thses event "
 //event -can be something the browser does or something a user does
 //example : 
-        //button click
+//button click
 
 //**************************************************************** */
 
 
 //4 way of writing
-    //1 using alert();
-    //2 by calling function
-    //3 using lnline event(html  on cilck =" ")
-    //4 using event Listeners
+//1 using alert();
+//2 by calling function
+//3 using lnline event(html  on cilck =" ")
+//4 using event Listeners
 //check : Page eventinjs
 
 //************************************************** */
@@ -921,14 +920,14 @@ function backTask()
 //the two key method to use with javascript are :
 
 //mostly use ;
-      //1 setTimeout(function,miliseconds)
-        //use: 
-        //execute a function ,after waiting a specified number milliseconds.
-     //2 setInterval(function,miliseconds)
-        //same as setTimeout() but its executing of function continuously 
-     //3  clearTimeout()
-        //
-     //4 clearInterval()
+//1 setTimeout(function,miliseconds)
+//use: 
+//execute a function ,after waiting a specified number milliseconds.
+//2 setInterval(function,miliseconds)
+//same as setTimeout() but its executing of function continuously 
+//3  clearTimeout()
+//
+//4 clearInterval()
 //****************************************************************** */
 //oops in javascript
 //what is object literal :
@@ -939,10 +938,10 @@ function backTask()
 //way 1
 let data = {
     //key           value
-    usernameis : "ram",
-    userage : 25,
-    payment : 25000,
-    getdata : function(){
+    usernameis: "ram",
+    userage: 25,
+    payment: 25000,
+    getdata: function () {
         console.log(`may name is ${data.usernameis}`)
     }
 }
@@ -955,13 +954,13 @@ data.getdata();
 //if we want object as value set 
 let bestwaydata = {
     //key           value
-    usernameis :{
-        firstName : 'Ram',
-        lastName : 'Patil'
+    usernameis: {
+        firstName: 'Ram',
+        lastName: 'Patil'
     },
-    userage : 16,
-    payment : 10000,
-    getdata : function(){
+    userage: 16,
+    payment: 10000,
+    getdata: function () {
         console.log(`may name is ${bstwaydata.usernameis}`)
     }
 }
@@ -976,16 +975,15 @@ console.log(bestwaydata.usernameis.lastName);
 //for example :1
 console.log(this); //both belong to window object
 //for example 2 
-function myn()
-{
+function myn() {
     console.log(this);//both belong to window object
 }
 myn();// : 
 
 //
 const objS = {
-    myage : 54,
-    mynamei(){
+    myage: 54,
+    mynamei() {
         console.log(this);
 
     }
@@ -995,13 +993,13 @@ objS.mynamei();
 
 
 //********************************************* */
-let usedata ={
-    mynm :{
+let usedata = {
+    mynm: {
         rname: "Ram",
-        sname:"pawar"
+        sname: "pawar"
     },
-    mage : 14,
-    getdata(){
+    mage: 14,
+    getdata() {
         console.log(`mynameis ${this.mynm.sname} and my age is ${this.mage}`);
     }
 }
@@ -1015,7 +1013,7 @@ usedata.getdata();
 
 //*********************************************************************************************************** */
 
-const EducationData = ['math',100,60,'pass']
+const EducationData = ['math', 100, 60, 'pass']
 // let subject = EducationData[0];
 // let OutOfMark = EducationData[1];
 // let Score = EducationData[2];
@@ -1024,7 +1022,7 @@ const EducationData = ['math',100,60,'pass']
 //console.log(Result);
 
 //best way to do 
-let [subject,OutOfMark,Score,Result,stud="Ram"] =EducationData;
+let [subject, OutOfMark, Score, Result, stud = "Ram"] = EducationData;
 console.log(OutOfMark);
 
 //***************************************************************************************** */
@@ -1034,16 +1032,283 @@ console.log(OutOfMark);
 //**************************************************************************************** */
 
 const myBioDataedu = {
-    unameobj:'yanika',
-    usnameobj:'okina',
-    age:24
+    unameobj: 'yanika',
+    usnameobj: 'okina',
+    age: 24
 }
 
 // let ageisk = myBioDataedu.age;
 // console.log(ageisk);
 
 //bst way to do 
-let {unameobj,usnameobj,age}=myBioDataedu;
-console.log(unameobj);
+// let {unameobj,usnameobj,age}=myBioDataedu;
+// console.log(unameobj);
 //1126
-//************************1******** */
+//************************1******** ******************************/
+
+//object properties 
+//we can use new dynamic properties
+let nameofuser = "ram";
+const databio = {
+    [nameofuser]: "hello how are you ?",
+    26: "is my age"
+}
+console.log(databio);
+
+//no need to write key and value if both are same 
+
+let nameisd = "vinod";
+let ageee = 26;
+
+// const staticbio ={
+//     nameisd : nameisd,
+//     ageee: ageee
+
+// }
+
+const staticbio = { nameisd, ageee }
+console.log(staticbio);
+
+//*********************************************************************************************** */
+
+//                                      Spread Operator
+
+//*********************************************************************************************** */
+
+const colors = ['red', 'yellow', 'green', 'blue'];
+const mycolor = ['red', 'yellow', 'green', 'blue', 'black'];
+//best way to mention 
+const fevcolor = [...colors, 'black'];
+console.log(fevcolor);
+
+//************************************************************************************************ */
+//                                        ES7 features 2016
+//************************************************************************************************ */
+
+
+//1 aaray include 
+const colorsOf = ['red', 'yellow', 'green', 'blue'];
+const isPresent = colorsOf.includes('red');
+console.log(isPresent);
+//2 **
+console.log(2 ** 3);
+
+
+//*****************************************2017  */
+const person = { name: 'tani', age: 55 }
+console.log(Object.values(person));
+console.log(Object.entries(person));
+
+//********************************************************************************************** */
+//2018
+const person1 = { name: 'tani', age: 55 };
+const person2 = { ...person1 };
+console.log(person2);
+//**************************************************************************************************** */
+//2019 
+//flat method 
+//
+//const arr1 = [[z-1,z-2],[z-1,z-2],[z-1,z-2],[z-1,z-2],[z-1,z-2],[z-1,z-2]];
+//console.log(arr1.flat());
+//console.log(arr1.flat(2));//as per own 
+//console.log(arr1.flat(Infinity));
+
+//2020
+//1 bigint //handle any number 
+//let numbig = Number.MAX_SAFE_INTEGER;
+//best option  add n
+//example 
+// console.log(13165135135161+12n);
+//"use strict"
+//x = 10;
+
+//**************************************************************************************************************/
+//                                             JavaScript                        
+//12:7:00
+//**************************************************************************************************************/
+//eventPropagation
+//higer order function
+//callback function
+//function currying(we will see after async js section)
+//callback hell
+//ajax call using xmlHttprequest
+//json section
+//fetch api
+//promisess
+//async-await 
+//errorhandling in js 
+
+//**************************************************************************************************************/
+//                                            Project 
+//**************************************************************************************************************/
+
+//1212
+//what is eventPropagation
+//: which order the element receive the  event 
+//its have two type
+// 1 bubble Phase (default run)
+// 2 capture Phase 
+// 3 Target Phase : use for particulr target 
+
+// flow : 
+
+//                                          window 
+//                                          document
+//                                           <html>
+//                                           <body>
+//                                           <div>
+//                                          <button>
+//                                         target phase
+
+//what bubble phase : when child event came 1st and after that their parent event
+//what is capture phase: when parent event came first after that thier child eent came 
+
+//eventStopPropagation stop this all propagation
+//if i want to add run only one specific event then we will use 
+//addeventlistener('id or class',functionname,false); //false by default (bobble sort)
+//if theri is true then its is capture phase
+
+//********************************************************************************************************* */
+// CallBack function
+//function which get passed as an argument to another function is called CBF
+//we can pass the argument to another function to called back at a later time 
+
+//create calculator
+
+
+const addfunc = (a, b) => {
+    return a + b;
+}//callbackfunction
+
+const subfunc = (a, b) => {
+    return a - b;
+}//callbackfunction
+
+const divfunc = (a, b) => {
+    return a / b;
+}//callbackfunction
+
+const multifunc = (a, b) => {
+    return a * b;
+}//callbackfunction
+
+//higer order function
+const calculator = (num1, num2, op) => {
+    return op(num1, num2);
+}
+
+calculator(5, 2, addfunc);
+console.log(calculator(5, 2, addfunc));
+console.log(calculator(5, 2, subfunc));
+console.log(calculator(5, 2, multifunc));
+console.log(calculator(5, 2, divfunc));
+
+
+
+//************************************************************************************ */
+
+//                              Asynchronous javascript
+
+//************************************************************************************ */
+//hoisting in javasceript
+//scope chian
+//lexical scoping in js
+//strict mode //we must follow order as per js 
+//this keyword
+//cloures in js
+//what is asynchronous js programming 
+//what is event loop 
+//********************************************************************************** */
+//what is hoisting in javasceript?
+//its mechanism where variable and function declarations are moved to the 
+//top of their scope before the code execute 
+//example:
+//  (format check )
+//  console.log(nameisram);
+//  let nameisram ="Ram";
+
+
+//what is scope chian and lexical scoping
+//use to resolve the value of variable names in js
+// scope chian is define lexical scoping
+//what is lexical scoping(also know as closures) ?(parent cant access the child variable and method or (outer function cant access inner value) )
+//inner function can get access tto their parent function variable but the vice-versa is not true 
+
+//example
+
+let aaq = "hello ";//global scope 
+
+const firstF = () => {
+    let bb = "i am bb function "
+    const secondF = () => {
+        let cc = " iam cc function "
+        console.log(aaq + bb + cc);
+    }
+    secondF();//
+}
+
+firstF();
+
+
+//what is closures in javascript?
+//it is the combination of a function bundle together with references to its surrounding state ()
+//using closures we can access to an outer function scope from an inner function 
+
+//note : in js closure are created every time a function is created ,at function creation time 
+//example 
+const outerfun = (oa) => {
+    let ob = 10;
+    const innerfun = () => {
+        let suminn = oa + ob;
+        console.log(`the sum of the two no is ${suminn}`);
+    }
+    return innerfun;
+}
+console.log(outerfun(2));
+let res = outerfun(5);
+res();
+
+// what is synchronous and asynchronous javascript ?
+//same as  java //synchronous
+
+
+//example of synchronous
+const fun22 = () => {
+    console.log(`function 22 is called`);
+}
+
+
+
+const fun11 = () => {
+    console.log(`function 11 is called `);
+    fun22();
+    console.log(`function 11 is called again`);
+}
+
+fun11();
+
+
+//example of asynchronous
+const fun222 = () => {
+    setTimeout(() => {
+        console.log(`function 222 is called `);
+    }, 2000)
+}
+
+
+const fun111 = () => {
+    console.log(`function 111 is called `);
+    fun222();
+    console.log(`function 111 is agian called `);
+}
+
+fun111();
+
+
+
+//********************************************************************************************************* */
+
+//                                               Event loop in js
+
+//***************************************************************************************************** */
+//1305
